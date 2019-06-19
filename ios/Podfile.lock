@@ -6,6 +6,10 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
+  - React (0.59.9):
+    - React/Core (= 0.59.9)
+  - react-native-config (0.11.7):
+    - React
   - React/Core (0.59.9):
     - yoga (= 0.59.9.React)
   - React/CxxBridge (0.59.9):
@@ -65,6 +69,7 @@ DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - react-native-config (from `../node_modules/react-native-config`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -95,6 +100,8 @@ EXTERNAL SOURCES:
     :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
+  react-native-config:
+    :path: "../node_modules/react-native-config"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -104,8 +111,9 @@ SPEC CHECKSUMS:
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   React: a86b92f00edbe1873a63e4a212c29b7a7ad5224f
+  react-native-config: 55548054279d92e0e4566ea15a8b9b81028ec342
   yoga: 03ff42a6f223fb88deeaed60249020d80c3091ee
 
-PODFILE CHECKSUM: e0fc2a568764661b574c866e8d933fa17e9d02ff
+PODFILE CHECKSUM: 8728223fa1a82b036f4cdfd0b9ba2be50ccf139f
 
 COCOAPODS: 1.7.2
