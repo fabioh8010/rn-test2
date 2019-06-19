@@ -1,0 +1,44 @@
+platform :ios, '9.0'
+
+target 'rn_test2' do
+  # Pods for rn_test2
+  pod 'React', :path => '../node_modules/react-native', :subspecs => [
+    'Core',
+    'CxxBridge',
+    'DevSupport',
+    'fishhook',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTBlob',
+    'RCTGeolocation',
+    'RCTText',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTWebSocket',
+    'RCTSettings',
+    'RCTVibration',
+    # Add any other subspecs you want to use in your project
+    # Remove any subspecs you don't want to use in your project
+  ]
+  
+  pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  target 'rn_test2Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+end
+
+target 'rn_test2-tvOS' do
+  # Pods for rn_test2-tvOS
+
+  target 'rn_test2-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
